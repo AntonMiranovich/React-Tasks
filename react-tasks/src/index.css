@@ -1,0 +1,9 @@
+body {
+  background: var(--Primaty-Grey-Light, #f6f5f4);
+}
+
+a {
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(172, 19, 19);
+}
