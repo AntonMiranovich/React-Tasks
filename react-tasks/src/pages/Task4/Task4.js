@@ -4,27 +4,22 @@ import img2 from "./assets/2.png";
 import img3 from "./assets/3.png";
 
 function Task4() {
-  const arr = ["anton", "asd", "qweqwe"];
+  const arrObj = [
+    {
+      name: "anton",
+      img: img1,
+    },
+    {
+      name: "asd",
+      img: img2,
+    },
+    {
+      name: "qweqwe",
+      img: img3,
+    },
+  ];
 
-  const result = [];
-  for (let i = 0; i < arr.length; i++) {
-    let count;
-    if (i == 0) {
-      count = img1;
-    } else {
-      if (i == 1) {
-        count = img2;
-      } else {
-        count = img3;
-      }
-    }
-    
-    result.push(
-      <div>
-        <p>{arr[i]}</p> <img src={count} />
-      </div>
-    );
-  }
+  const res=arrObj.map((el)=><div><p>{el.name}</p> <img src={el.img}/></div>)
 
   return (
     <>
@@ -35,7 +30,7 @@ function Task4() {
         {"<div><p>el</p> <img /></div>"}
       </p>
 
-      <div>{result}</div>
+      <div>{res}</div>
 
       <Link to={"/"}> Перейти на главную страницу</Link>
     </>
