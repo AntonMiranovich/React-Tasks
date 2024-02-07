@@ -7,7 +7,7 @@ function Task5() {
     if (isNaN) {
       return <p>{el}</p>;
     } else {
-      if (el % 2 == 0) {
+      if (el % 2 === 0) {
         return `${el} четное`;
       } else {
         return `${el} не четное`;

@@ -8,13 +8,12 @@ function Task31() {
     const request = await fetch("https://api.ipify.org/?format=json", {
       method: "GET",
     });
+    
     setData(await request.json());
     // console.log(await request.json());
   }
 
-  useEffect(() => {
-    getData();
-  }, []);
+  useEffect(() => getData(), []);
 
   return (
     <>

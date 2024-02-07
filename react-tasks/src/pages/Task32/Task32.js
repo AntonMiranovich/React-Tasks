@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import TextField from "@mui/material/TextField";
 
 function Task32() {
+  const [inpVal, setInpVal] = useState("");
+
+  const checkVal = (e) => setInpVal(e.target.value);
+
+  useEffect(() => console.log(inpVal), [inpVal]);
+
   return (
     <>
       <h1>Задача №32</h1>
@@ -12,6 +19,10 @@ function Task32() {
         изменений этого значения. При каждом изменении значения в поле ввода,
         выводить его в консоль с помощью useEffect.
       </p>
+
+      <div>
+        <TextField label="Input Value" variant="filled" onChange={checkVal} />
+      </div>
 
       <Link to={"/"}> Перейти на главную страницу</Link>
     </>
