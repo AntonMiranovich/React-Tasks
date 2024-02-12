@@ -9,8 +9,8 @@ function Task31() {
       method: "GET",
     });
     
+
     setData(await request.json());
-    // console.log(await request.json());
   }
 
   useEffect(() => getData(), []);
