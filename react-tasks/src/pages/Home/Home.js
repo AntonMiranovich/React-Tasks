@@ -145,6 +145,51 @@ function Home() {
       <p>
         <Link to={"/task47"}>Задача №47</Link>
       </p>
+      <p>
+        <Link to={"/task48"}>Задача №48</Link>
+      </p>
+      <p>
+        <Link to={"/task49"}>Задача №49</Link>
+      </p>
+      <p>
+        <Link to={"/task50"}>Задача №50</Link>
+      </p>
+      <p>
+        <Link to={"/task51"}>Задача №51</Link>
+      </p>
+      <p>
+        <Link to={"/task52"}>Задача №52</Link>
+      </p>
+      <p>
+        <Link to={"/task53"}>Задача №53</Link>
+      </p>
+      <p>
+        <Link to={"/task54"}>Задача №54</Link>
+      </p>
+      <p>
+        <Link to={"/task55"}>Задача №55</Link>
+      </p>
+      <p>
+        <Link to={"/task56"}>Задача №56</Link>
+      </p>
+      <p>
+        <Link to={"/task57"}>Задача №57</Link>
+      </p>
+      <p>
+        <Link to={"/task58"}>Задача №58</Link>
+      </p>
+      <p>
+        <Link to={"/task59"}>Задача №59</Link>
+      </p>
+      <p>
+        <Link to={"/task60"}>Задача №60</Link>
+      </p>
+      <p>
+        <Link to={"/task61"}>Задача №61</Link>
+      </p>
+      <p>
+        <Link to={"/task62"}>Задача №62</Link>
+      </p>
     </>
   );
 }
