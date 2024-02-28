@@ -3,6 +3,8 @@ import { useState } from "react";
 import axios from "axios";
 
 function Task61() {
+
+
   return (
     <>
       <h1>Задача №61</h1>
@@ -12,6 +14,7 @@ function Task61() {
         запрос к APIс рандомно сгенерированным числом и отображает результат в
         консоль.
       </p>
+
 
       <Link to={"/"}> Перейти на главную страницу</Link>
     </>
