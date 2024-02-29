@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 function Task61() {
+  const [data, setData] = useState("");
 
+  async function test() {
+    const dataApi = await axios.get(
+      `http://numbersapi.com/${Math.floor(Math.random() * 100)}`
+    );
+  useEffect(() => {
+      setData(dataApi);
+    }
+  }, [dataApi]);
 
   return (
     <>
@@ -15,6 +24,7 @@ function Task61() {
         консоль.
       </p>
 
+      <h1>{data}</h1>
 
       <Link to={"/"}> Перейти на главную страницу</Link>
     </>
