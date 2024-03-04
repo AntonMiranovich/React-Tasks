@@ -208,6 +208,15 @@ function Home() {
       <p>
         <Link to={"/task68"}>Задача №68</Link>
       </p>
+      <p>
+        <Link to={"/task69"}>Задача №69</Link>
+      </p>
+      <p>
+        <Link to={"/task70"}>Задача №70</Link>
+      </p>
+      <p>
+        <Link to={"/task71"}>Задача №71</Link>
+      </p>
     </>
   );
 }
