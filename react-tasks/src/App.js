@@ -71,83 +71,96 @@ import Task68 from "./pages/Task68/Task68";
 import Task69 from "./pages/Task69/Task69";
 import Task70 from "./pages/Task70/Task70";
 import Task71 from "./pages/Task71/Task71";
+import Task72 from "./pages/Task72/Task72";
+import { TaskContext } from "./Context/Context";
 
 function App() {
+  const constext = {
+    tast69Constext: { id: 1, name: "Anton", surname: "Miranovich" },
+    tast70Constext: { en: "Hello", ru: "Привет", jp: "Ni hao" },
+    tast71Constext: { temperature: "29", humidity: "80%", windSpeed: "60km/h" },
+  };
+
   return (
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/task1" element={<Task1 />}></Route>
-      <Route path="/task2" element={<Task2 />}></Route>
-      <Route path="/task3" element={<Task3 />}></Route>
-      <Route path="/task4" element={<Task4 />}></Route>
-      <Route path="/task5" element={<Task5 />}></Route>
-      <Route path="/task6" element={<Task6 />}></Route>
-      <Route path="/task7" element={<Task7 />}></Route>
-      <Route path="/task8" element={<Task8 />}></Route>
-      <Route path="/task9" element={<Task9 />}></Route>
-      <Route path="/task10" element={<Task10 />}></Route>
-      <Route path="/task11" element={<Task11 />}></Route>
-      <Route path="/task12" element={<Task12 />}></Route>
-      <Route path="/task13" element={<Task13 />}></Route>
-      <Route path="/task14" element={<Task14 />}></Route>
-      <Route path="/task15" element={<Task15 />}></Route>
-      <Route path="/task16" element={<Task16 />}></Route>
-      <Route path="/task17" element={<Task17 />}></Route>
-      <Route path="/task18" element={<Task18 />}></Route>
-      <Route path="/task19" element={<Task19 />}></Route>
-      <Route path="/task20" element={<Task20 />}></Route>
-      <Route path="/task21" element={<Task21 />}></Route>
-      <Route path="/task22" element={<Task22 />}></Route>
-      <Route path="/task23" element={<Task23 />}></Route>
-      <Route path="/task24" element={<Task24 />}></Route>
-      <Route path="/task25" element={<Task25 />}></Route>
-      <Route path="/task26" element={<Task26 />}></Route>
-      <Route path="/task27" element={<Task27 />}></Route>
-      <Route path="/task28" element={<Task28 />}></Route>
-      <Route path="/task29" element={<Task29 />}></Route>
-      <Route path="/task30" element={<Task30 />}></Route>
-      <Route path="/task31" element={<Task31 />}></Route>
-      <Route path="/task32" element={<Task32 />}></Route>
-      <Route path="/task33" element={<Task33 />}></Route>
-      <Route path="/task34" element={<Task34 />}></Route>
-      <Route path="/task35" element={<Task35 />}></Route>
-      <Route path="/task36" element={<Task36 />}></Route>
-      <Route path="/task37" element={<Task37 />}></Route>
-      <Route path="/task38" element={<Task38 />}></Route>
-      <Route path="/task39" element={<Task39 />}></Route>
-      <Route path="/task40" element={<Task40 />}></Route>
-      <Route path="/task41" element={<Task41 />}></Route>
-      <Route path="/task42" element={<Task42 />}></Route>
-      <Route path="/task43" element={<Task43 />}></Route>
-      <Route path="/task44" element={<Task44 />}></Route>
-      <Route path="/task45" element={<Task45 />}></Route>
-      <Route path="/task46" element={<Task46 />}></Route>
-      <Route path="/task47" element={<Task47 />}></Route>
-      <Route path="/task48" element={<Task48 />}></Route>
-      <Route path="/task49" element={<Task49 />}></Route>
-      <Route path="/task50" element={<Task50 />}></Route>
-      <Route path="/task51" element={<Task51 />}></Route>
-      <Route path="/task52" element={<Task52 />}></Route>
-      <Route path="/task53" element={<Task53 />}></Route>
-      <Route path="/task54" element={<Task54 />}></Route>
-      <Route path="/task55" element={<Task55 />}></Route>
-      <Route path="/task56" element={<Task56 />}></Route>
-      <Route path="/task57" element={<Task57 />}></Route>
-      <Route path="/task58" element={<Task58 />}></Route>
-      <Route path="/task59" element={<Task59 />}></Route>
-      <Route path="/task60" element={<Task60 />}></Route>
-      <Route path="/task61" element={<Task61 />}></Route>
-      <Route path="/task62" element={<Task62 />}></Route>
-      <Route path="/task63" element={<Task63 />}></Route>
-      <Route path="/task64" element={<Task64 />}></Route>
-      <Route path="/task65" element={<Task65 />}></Route>
-      <Route path="/task66" element={<Task66 />}></Route>
-      <Route path="/task67" element={<Task67 />}></Route>
-      <Route path="/task68" element={<Task68 />}></Route>
-      <Route path="/task69" element={<Task69 />}></Route>
-      <Route path="/task70" element={<Task70 />}></Route>
-      <Route path="/task71" element={<Task71 />}></Route>
-    </Routes>
+    <>
+      <TaskContext.Provider value={constext}>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/task1" element={<Task1 />}></Route>
+          <Route path="/task2" element={<Task2 />}></Route>
+          <Route path="/task3" element={<Task3 />}></Route>
+          <Route path="/task4" element={<Task4 />}></Route>
+          <Route path="/task5" element={<Task5 />}></Route>
+          <Route path="/task6" element={<Task6 />}></Route>
+          <Route path="/task7" element={<Task7 />}></Route>
+          <Route path="/task8" element={<Task8 />}></Route>
+          <Route path="/task9" element={<Task9 />}></Route>
+          <Route path="/task10" element={<Task10 />}></Route>
+          <Route path="/task11" element={<Task11 />}></Route>
+          <Route path="/task12" element={<Task12 />}></Route>
+          <Route path="/task13" element={<Task13 />}></Route>
+          <Route path="/task14" element={<Task14 />}></Route>
+          <Route path="/task15" element={<Task15 />}></Route>
+          <Route path="/task16" element={<Task16 />}></Route>
+          <Route path="/task17" element={<Task17 />}></Route>
+          <Route path="/task18" element={<Task18 />}></Route>
+          <Route path="/task19" element={<Task19 />}></Route>
+          <Route path="/task20" element={<Task20 />}></Route>
+          <Route path="/task21" element={<Task21 />}></Route>
+          <Route path="/task22" element={<Task22 />}></Route>
+          <Route path="/task23" element={<Task23 />}></Route>
+          <Route path="/task24" element={<Task24 />}></Route>
+          <Route path="/task25" element={<Task25 />}></Route>
+          <Route path="/task26" element={<Task26 />}></Route>
+          <Route path="/task27" element={<Task27 />}></Route>
+          <Route path="/task28" element={<Task28 />}></Route>
+          <Route path="/task29" element={<Task29 />}></Route>
+          <Route path="/task30" element={<Task30 />}></Route>
+          <Route path="/task31" element={<Task31 />}></Route>
+          <Route path="/task32" element={<Task32 />}></Route>
+          <Route path="/task33" element={<Task33 />}></Route>
+          <Route path="/task34" element={<Task34 />}></Route>
+          <Route path="/task35" element={<Task35 />}></Route>
+          <Route path="/task36" element={<Task36 />}></Route>
+          <Route path="/task37" element={<Task37 />}></Route>
+          <Route path="/task38" element={<Task38 />}></Route>
+          <Route path="/task39" element={<Task39 />}></Route>
+          <Route path="/task40" element={<Task40 />}></Route>
+          <Route path="/task41" element={<Task41 />}></Route>
+          <Route path="/task42" element={<Task42 />}></Route>
+          <Route path="/task43" element={<Task43 />}></Route>
+          <Route path="/task44" element={<Task44 />}></Route>
+          <Route path="/task45" element={<Task45 />}></Route>
+          <Route path="/task46" element={<Task46 />}></Route>
+          <Route path="/task47" element={<Task47 />}></Route>
+          <Route path="/task48" element={<Task48 />}></Route>
+          <Route path="/task49" element={<Task49 />}></Route>
+          <Route path="/task50" element={<Task50 />}></Route>
+          <Route path="/task51" element={<Task51 />}></Route>
+          <Route path="/task52" element={<Task52 />}></Route>
+          <Route path="/task53" element={<Task53 />}></Route>
+          <Route path="/task54" element={<Task54 />}></Route>
+          <Route path="/task55" element={<Task55 />}></Route>
+          <Route path="/task56" element={<Task56 />}></Route>
+          <Route path="/task57" element={<Task57 />}></Route>
+          <Route path="/task58" element={<Task58 />}></Route>
+          <Route path="/task59" element={<Task59 />}></Route>
+          <Route path="/task60" element={<Task60 />}></Route>
+          <Route path="/task61" element={<Task61 />}></Route>
+          <Route path="/task62" element={<Task62 />}></Route>
+          <Route path="/task63" element={<Task63 />}></Route>
+          <Route path="/task64" element={<Task64 />}></Route>
+          <Route path="/task65" element={<Task65 />}></Route>
+          <Route path="/task66" element={<Task66 />}></Route>
+          <Route path="/task67" element={<Task67 />}></Route>
+          <Route path="/task68" element={<Task68 />}></Route>
+          <Route path="/task69" element={<Task69 />}></Route>
+          <Route path="/task70" element={<Task70 />}></Route>
+          <Route path="/task71" element={<Task71 />}></Route>
+          <Route path="/task72" element={<Task72 />}></Route>
+        </Routes>
+      </TaskContext.Provider>
+    </>
   );
 }
 
