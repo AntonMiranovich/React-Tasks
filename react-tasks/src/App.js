@@ -73,17 +73,22 @@ import Task70 from "./pages/Task70/Task70";
 import Task71 from "./pages/Task71/Task71";
 import Task72 from "./pages/Task72/Task72";
 import { TaskContext } from "./Context/Context";
+import { useState } from "react";
 
 function App() {
-  const constext = {
+  const context = {
     tast69Constext: { id: 1, name: "Anton", surname: "Miranovich" },
     tast70Constext: { en: "Hello", ru: "Привет", jp: "Ni hao" },
     tast71Constext: { temperature: "29", humidity: "80%", windSpeed: "60km/h" },
+    task72Context: [
+      { color: "white", backgroundColor: "black" },
+      { color: "black", backgroundColor: "white" },
+    ],
   };
 
   return (
     <>
-      <TaskContext.Provider value={constext}>
+      <TaskContext.Provider value={context}>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/task1" element={<Task1 />}></Route>
