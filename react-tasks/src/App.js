@@ -74,6 +74,11 @@ import Task71 from "./pages/Task71/Task71";
 import Task72 from "./pages/Task72/Task72";
 import { TaskContext } from "./Context/Context";
 import { useState } from "react";
+import Task73 from "./pages/Task73/Task73";
+import Task74 from "./pages/Task74/Task74";
+import Task75 from "./pages/Task75/Task75";
+import Task76 from "./pages/Task76/Task76";
+import Task77 from "./pages/Task77/Task77";
 
 function App() {
   const context = {
@@ -163,6 +168,11 @@ function App() {
           <Route path="/task70" element={<Task70 />}></Route>
           <Route path="/task71" element={<Task71 />}></Route>
           <Route path="/task72" element={<Task72 />}></Route>
+          <Route path="/task73" element={<Task73 />}></Route>
+          <Route path="/task74" element={<Task74 />}></Route>
+          <Route path="/task75" element={<Task75 />}></Route>
+          <Route path="/task76" element={<Task76 />}></Route>
+          <Route path="/task77" element={<Task77 />}></Route>
         </Routes>
       </TaskContext.Provider>
     </>
