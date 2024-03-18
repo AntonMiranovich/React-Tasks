@@ -79,6 +79,9 @@ import Task74 from "./pages/Task74/Task74";
 import Task75 from "./pages/Task75/Task75";
 import Task76 from "./pages/Task76/Task76";
 import Task77 from "./pages/Task77/Task77";
+import Task78 from "./pages/Task78/Task78";
+import Task79 from "./pages/Task79/Task79";
+import Task80 from "./pages/Task80/Task80";
 
 function App() {
   const context = {
@@ -173,6 +176,9 @@ function App() {
           <Route path="/task75" element={<Task75 />}></Route>
           <Route path="/task76" element={<Task76 />}></Route>
           <Route path="/task77" element={<Task77 />}></Route>
+          <Route path="/task78" element={<Task78 />}></Route>
+          <Route path="/task79" element={<Task79 />}></Route>
+          <Route path="/task80" element={<Task80 />}></Route>
         </Routes>
       </TaskContext.Provider>
     </>
